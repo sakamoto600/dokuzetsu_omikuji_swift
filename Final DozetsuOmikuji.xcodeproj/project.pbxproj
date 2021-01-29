@@ -13,6 +13,8 @@
 		A34D58D1245F3200005D6304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34D58CF245F3200005D6304 /* Main.storyboard */; };
 		A34D58D3245F3203005D6304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34D58D2245F3203005D6304 /* Assets.xcassets */; };
 		A34D58D6245F3203005D6304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34D58D4245F3203005D6304 /* LaunchScreen.storyboard */; };
+		A34D58DE245F3258005D6304 /* OmikujiPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34D58DD245F3258005D6304 /* OmikujiPartViewController.swift */; };
+		A3BBE3B624600DD20021598A /* syakasyaka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3BBE3B524600DD20021598A /* syakasyaka.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A34D58D2245F3203005D6304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A34D58D5245F3203005D6304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A34D58D7245F3203005D6304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34D58DD245F3258005D6304 /* OmikujiPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmikujiPartViewController.swift; sourceTree = "<group>"; };
+		A3BBE3B524600DD20021598A /* syakasyaka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = syakasyaka.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		A34D58C8245F3200005D6304 /* Final DozetsuOmikuji */ = {
 			isa = PBXGroup;
 			children = (
+				A3BBE3B524600DD20021598A /* syakasyaka.mp3 */,
 				A34D58C9245F3200005D6304 /* AppDelegate.swift */,
 				A34D58CB245F3200005D6304 /* SceneDelegate.swift */,
 				A34D58CD245F3200005D6304 /* ViewController.swift */,
+				A34D58DD245F3258005D6304 /* OmikujiPartViewController.swift */,
 				A34D58CF245F3200005D6304 /* Main.storyboard */,
 				A34D58D2245F3203005D6304 /* Assets.xcassets */,
 				A34D58D4245F3203005D6304 /* LaunchScreen.storyboard */,
@@ -94,7 +100,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Ryota Sakamoto";
 				TargetAttributes = {
 					A34D58C5245F3200005D6304 = {
@@ -127,6 +133,7 @@
 			files = (
 				A34D58D6245F3203005D6304 /* LaunchScreen.storyboard in Resources */,
 				A34D58D3245F3203005D6304 /* Assets.xcassets in Resources */,
+				A3BBE3B624600DD20021598A /* syakasyaka.mp3 in Resources */,
 				A34D58D1245F3200005D6304 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A34D58DE245F3258005D6304 /* OmikujiPartViewController.swift in Sources */,
 				A34D58CE245F3200005D6304 /* ViewController.swift in Sources */,
 				A34D58CA245F3200005D6304 /* AppDelegate.swift in Sources */,
 				A34D58CC245F3200005D6304 /* SceneDelegate.swift in Sources */,
@@ -192,6 +200,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +261,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -287,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NDS8VX4VTS;
 				INFOPLIST_FILE = "Final DozetsuOmikuji/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Ryota-Sakamoto.Final-DozetsuOmikuji";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NDS8VX4VTS;
 				INFOPLIST_FILE = "Final DozetsuOmikuji/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Ryota-Sakamoto.Final-DozetsuOmikuji";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
